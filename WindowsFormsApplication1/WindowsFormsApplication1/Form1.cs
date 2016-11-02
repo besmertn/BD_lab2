@@ -19,12 +19,18 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "hostelDataSet.Benefits". При необходимости она может быть перемещена или удалена.
+            this.benefitsTableAdapter.Fill(this.hostelDataSet.Benefits);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "hostelDataSet.Students". При необходимости она может быть перемещена или удалена.
+            this.studentsTableAdapter.Fill(this.hostelDataSet.Students);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "hostelDataSet.Rooms". При необходимости она может быть перемещена или удалена.
+            this.roomsTableAdapter.Fill(this.hostelDataSet.Rooms);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "database1DataSet5.Студенты". При необходимости она может быть перемещена или удалена.
-            this.студентыTableAdapter1.Fill(this.database1DataSet5.Студенты);
+            //this.студентыTableAdapter1.Fill(this.database1DataSet5.Студенты);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "database1DataSet5.Льготы". При необходимости она может быть перемещена или удалена.
-            this.льготыTableAdapter1.Fill(this.database1DataSet5.Льготы);
+           // this.льготыTableAdapter1.Fill(this.database1DataSet5.Льготы);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "database1DataSet5.Комнаты". При необходимости она может быть перемещена или удалена.
-            this.комнатыTableAdapter1.Fill(this.database1DataSet5.Комнаты);
+            //this.комнатыTableAdapter1.Fill(this.database1DataSet5.Комнаты);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -39,9 +45,12 @@ namespace WindowsFormsApplication1
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            комнатыTableAdapter1.Update(database1DataSet5);
+            /*комнатыTableAdapter1.Update(database1DataSet5);
             студентыTableAdapter1.Update(database1DataSet5);
-            льготыTableAdapter1.Update(database1DataSet5);
+            льготыTableAdapter1.Update(database1DataSet5);*/
+            roomsTableAdapter.Update(hostelDataSet);
+            benefitsTableAdapter.Update(hostelDataSet);
+            studentsTableAdapter.Update(hostelDataSet);
         }
     }
 }

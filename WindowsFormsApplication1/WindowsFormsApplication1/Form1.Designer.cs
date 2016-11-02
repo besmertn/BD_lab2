@@ -31,32 +31,48 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.номерКомнатыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.соимостьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.количествоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.инвентарьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.этажDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.комнатыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.hostelDataSet = new WindowsFormsApplication1.HostelDataSet();
+            this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.roomsTableAdapter = new WindowsFormsApplication1.HostelDataSetTableAdapters.RoomsTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.floorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentsTableAdapter = new WindowsFormsApplication1.HostelDataSetTableAdapters.StudentsTableAdapter();
+            this.benefitsTableAdapter = new WindowsFormsApplication1.HostelDataSetTableAdapters.BenefitsTableAdapter();
+            this.benefitsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.discountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passportDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.benefitCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colonizeDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.кодСтудентаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.фИОDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.годРожденияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.полDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.адресDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.группаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.студентыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -69,11 +85,6 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.льготыBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.кодЛьготыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.типЛьготыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.скидкаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingNavigator3 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
@@ -86,27 +97,21 @@
             this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.database1DataSet5 = new WindowsFormsApplication1.Database1DataSet5();
-            this.комнатыTableAdapter1 = new WindowsFormsApplication1.Database1DataSet5TableAdapters.КомнатыTableAdapter();
-            this.льготыTableAdapter1 = new WindowsFormsApplication1.Database1DataSet5TableAdapters.ЛьготыTableAdapter();
-            this.студентыTableAdapter1 = new WindowsFormsApplication1.Database1DataSet5TableAdapters.СтудентыTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.комнатыBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hostelDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.benefitsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.студентыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
             this.bindingNavigator2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.льготыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).BeginInit();
             this.bindingNavigator3.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -114,57 +119,220 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.номерКомнатыDataGridViewTextBoxColumn,
-            this.соимостьDataGridViewTextBoxColumn,
-            this.количествоDataGridViewTextBoxColumn,
-            this.инвентарьDataGridViewTextBoxColumn,
-            this.этажDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.комнатыBindingSource;
+            this.idDataGridViewTextBoxColumn,
+            this.priceDataGridViewTextBoxColumn,
+            this.amountDataGridViewTextBoxColumn,
+            this.floorDataGridViewTextBoxColumn,
+            this.toolsDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.roomsBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 43);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(692, 175);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // номерКомнатыDataGridViewTextBoxColumn
+            // dataGridView2
             // 
-            this.номерКомнатыDataGridViewTextBoxColumn.DataPropertyName = "Номер комнаты";
-            this.номерКомнатыDataGridViewTextBoxColumn.HeaderText = "Номер комнаты";
-            this.номерКомнатыDataGridViewTextBoxColumn.Name = "номерКомнатыDataGridViewTextBoxColumn";
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn1,
+            this.typeDataGridViewTextBoxColumn,
+            this.discountDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.benefitsBindingSource1;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 269);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(692, 150);
+            this.dataGridView2.TabIndex = 2;
             // 
-            // соимостьDataGridViewTextBoxColumn
+            // dataGridView3
             // 
-            this.соимостьDataGridViewTextBoxColumn.DataPropertyName = "Соимость";
-            this.соимостьDataGridViewTextBoxColumn.HeaderText = "Соимость";
-            this.соимостьDataGridViewTextBoxColumn.Name = "соимостьDataGridViewTextBoxColumn";
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn2,
+            this.nameDataGridViewTextBoxColumn,
+            this.genderDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn,
+            this.groupDataGridViewTextBoxColumn,
+            this.passportDataGridViewTextBoxColumn,
+            this.benefitCodeDataGridViewTextBoxColumn,
+            this.roomNumberDataGridViewTextBoxColumn,
+            this.colonizeDateDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.studentsBindingSource1;
+            this.dataGridView3.Location = new System.Drawing.Point(12, 473);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(692, 150);
+            this.dataGridView3.TabIndex = 4;
             // 
-            // количествоDataGridViewTextBoxColumn
+            // menuStrip1
             // 
-            this.количествоDataGridViewTextBoxColumn.DataPropertyName = "Количество";
-            this.количествоDataGridViewTextBoxColumn.HeaderText = "Количество";
-            this.количествоDataGridViewTextBoxColumn.Name = "количествоDataGridViewTextBoxColumn";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(733, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // инвентарьDataGridViewTextBoxColumn
+            // fileToolStripMenuItem
             // 
-            this.инвентарьDataGridViewTextBoxColumn.DataPropertyName = "Инвентарь";
-            this.инвентарьDataGridViewTextBoxColumn.HeaderText = "Инвентарь";
-            this.инвентарьDataGridViewTextBoxColumn.Name = "инвентарьDataGridViewTextBoxColumn";
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
             // 
-            // этажDataGridViewTextBoxColumn
+            // exitToolStripMenuItem
             // 
-            this.этажDataGridViewTextBoxColumn.DataPropertyName = "Этаж";
-            this.этажDataGridViewTextBoxColumn.HeaderText = "Этаж";
-            this.этажDataGridViewTextBoxColumn.Name = "этажDataGridViewTextBoxColumn";
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // комнатыBindingSource
+            // bindingSource1
             // 
-            this.комнатыBindingSource.DataMember = "Комнаты";
-            this.комнатыBindingSource.DataSource = this.database1DataSet5;
+            this.bindingSource1.DataSource = this.hostelDataSet;
+            this.bindingSource1.Position = 0;
+            // 
+            // hostelDataSet
+            // 
+            this.hostelDataSet.DataSetName = "HostelDataSet";
+            this.hostelDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // roomsBindingSource
+            // 
+            this.roomsBindingSource.DataMember = "Rooms";
+            this.roomsBindingSource.DataSource = this.bindingSource1;
+            // 
+            // roomsTableAdapter
+            // 
+            this.roomsTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            // 
+            // amountDataGridViewTextBoxColumn
+            // 
+            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
+            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
+            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
+            // 
+            // floorDataGridViewTextBoxColumn
+            // 
+            this.floorDataGridViewTextBoxColumn.DataPropertyName = "Floor";
+            this.floorDataGridViewTextBoxColumn.HeaderText = "Floor";
+            this.floorDataGridViewTextBoxColumn.Name = "floorDataGridViewTextBoxColumn";
+            // 
+            // toolsDataGridViewTextBoxColumn
+            // 
+            this.toolsDataGridViewTextBoxColumn.DataPropertyName = "Tools";
+            this.toolsDataGridViewTextBoxColumn.HeaderText = "Tools";
+            this.toolsDataGridViewTextBoxColumn.Name = "toolsDataGridViewTextBoxColumn";
+            // 
+            // studentsTableAdapter
+            // 
+            this.studentsTableAdapter.ClearBeforeFill = true;
+            // 
+            // benefitsTableAdapter
+            // 
+            this.benefitsTableAdapter.ClearBeforeFill = true;
+            // 
+            // benefitsBindingSource1
+            // 
+            this.benefitsBindingSource1.DataMember = "Benefits";
+            this.benefitsBindingSource1.DataSource = this.bindingSource1;
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            // 
+            // typeDataGridViewTextBoxColumn
+            // 
+            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
+            this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
+            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            // 
+            // discountDataGridViewTextBoxColumn
+            // 
+            this.discountDataGridViewTextBoxColumn.DataPropertyName = "Discount";
+            this.discountDataGridViewTextBoxColumn.HeaderText = "Discount";
+            this.discountDataGridViewTextBoxColumn.Name = "discountDataGridViewTextBoxColumn";
+            // 
+            // studentsBindingSource1
+            // 
+            this.studentsBindingSource1.DataMember = "Students";
+            this.studentsBindingSource1.DataSource = this.bindingSource1;
+            // 
+            // idDataGridViewTextBoxColumn2
+            // 
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn2.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // groupDataGridViewTextBoxColumn
+            // 
+            this.groupDataGridViewTextBoxColumn.DataPropertyName = "Group";
+            this.groupDataGridViewTextBoxColumn.HeaderText = "Group";
+            this.groupDataGridViewTextBoxColumn.Name = "groupDataGridViewTextBoxColumn";
+            // 
+            // passportDataGridViewTextBoxColumn
+            // 
+            this.passportDataGridViewTextBoxColumn.DataPropertyName = "Passport";
+            this.passportDataGridViewTextBoxColumn.HeaderText = "Passport";
+            this.passportDataGridViewTextBoxColumn.Name = "passportDataGridViewTextBoxColumn";
+            // 
+            // benefitCodeDataGridViewTextBoxColumn
+            // 
+            this.benefitCodeDataGridViewTextBoxColumn.DataPropertyName = "BenefitCode";
+            this.benefitCodeDataGridViewTextBoxColumn.HeaderText = "BenefitCode";
+            this.benefitCodeDataGridViewTextBoxColumn.Name = "benefitCodeDataGridViewTextBoxColumn";
+            // 
+            // roomNumberDataGridViewTextBoxColumn
+            // 
+            this.roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.HeaderText = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
+            // 
+            // colonizeDateDataGridViewTextBoxColumn
+            // 
+            this.colonizeDateDataGridViewTextBoxColumn.DataPropertyName = "ColonizeDate";
+            this.colonizeDateDataGridViewTextBoxColumn.HeaderText = "ColonizeDate";
+            this.colonizeDateDataGridViewTextBoxColumn.Name = "colonizeDateDataGridViewTextBoxColumn";
             // 
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.BindingSource = this.комнатыBindingSource;
+            this.bindingNavigator1.BindingSource = this.roomsBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.None;
@@ -187,34 +355,9 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(294, 25);
-            this.bindingNavigator1.TabIndex = 1;
+            this.bindingNavigator1.Size = new System.Drawing.Size(263, 25);
+            this.bindingNavigator1.TabIndex = 7;
             this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -248,9 +391,16 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -273,71 +423,31 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // dataGridView2
+            // bindingNavigatorAddNewItem
             // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.кодСтудентаDataGridViewTextBoxColumn,
-            this.фИОDataGridViewTextBoxColumn,
-            this.годРожденияDataGridViewTextBoxColumn,
-            this.полDataGridViewTextBoxColumn,
-            this.адресDataGridViewTextBoxColumn,
-            this.группаDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.студентыBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 269);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(692, 150);
-            this.dataGridView2.TabIndex = 2;
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
-            // кодСтудентаDataGridViewTextBoxColumn
+            // bindingNavigatorDeleteItem
             // 
-            this.кодСтудентаDataGridViewTextBoxColumn.DataPropertyName = "Код студента";
-            this.кодСтудентаDataGridViewTextBoxColumn.HeaderText = "Код студента";
-            this.кодСтудентаDataGridViewTextBoxColumn.Name = "кодСтудентаDataGridViewTextBoxColumn";
-            // 
-            // фИОDataGridViewTextBoxColumn
-            // 
-            this.фИОDataGridViewTextBoxColumn.DataPropertyName = "ФИО";
-            this.фИОDataGridViewTextBoxColumn.HeaderText = "ФИО";
-            this.фИОDataGridViewTextBoxColumn.Name = "фИОDataGridViewTextBoxColumn";
-            // 
-            // годРожденияDataGridViewTextBoxColumn
-            // 
-            this.годРожденияDataGridViewTextBoxColumn.DataPropertyName = "Год рождения";
-            this.годРожденияDataGridViewTextBoxColumn.HeaderText = "Год рождения";
-            this.годРожденияDataGridViewTextBoxColumn.Name = "годРожденияDataGridViewTextBoxColumn";
-            // 
-            // полDataGridViewTextBoxColumn
-            // 
-            this.полDataGridViewTextBoxColumn.DataPropertyName = "Пол";
-            this.полDataGridViewTextBoxColumn.HeaderText = "Пол";
-            this.полDataGridViewTextBoxColumn.Name = "полDataGridViewTextBoxColumn";
-            // 
-            // адресDataGridViewTextBoxColumn
-            // 
-            this.адресDataGridViewTextBoxColumn.DataPropertyName = "Адрес";
-            this.адресDataGridViewTextBoxColumn.HeaderText = "Адрес";
-            this.адресDataGridViewTextBoxColumn.Name = "адресDataGridViewTextBoxColumn";
-            // 
-            // группаDataGridViewTextBoxColumn
-            // 
-            this.группаDataGridViewTextBoxColumn.DataPropertyName = "Группа";
-            this.группаDataGridViewTextBoxColumn.HeaderText = "Группа";
-            this.группаDataGridViewTextBoxColumn.Name = "группаDataGridViewTextBoxColumn";
-            // 
-            // студентыBindingSource
-            // 
-            this.студентыBindingSource.DataMember = "Студенты";
-            this.студентыBindingSource.DataSource = this.database1DataSet5;
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigator2
             // 
             this.bindingNavigator2.AddNewItem = this.toolStripButton1;
-            this.bindingNavigator2.BindingSource = this.студентыBindingSource;
+            this.bindingNavigator2.BindingSource = this.benefitsBindingSource1;
             this.bindingNavigator2.CountItem = this.toolStripLabel1;
             this.bindingNavigator2.DeleteItem = this.toolStripButton2;
             this.bindingNavigator2.Dock = System.Windows.Forms.DockStyle.None;
@@ -361,7 +471,7 @@
             this.bindingNavigator2.Name = "bindingNavigator2";
             this.bindingNavigator2.PositionItem = this.toolStripTextBox1;
             this.bindingNavigator2.Size = new System.Drawing.Size(263, 25);
-            this.bindingNavigator2.TabIndex = 3;
+            this.bindingNavigator2.TabIndex = 8;
             this.bindingNavigator2.Text = "bindingNavigator2";
             // 
             // toolStripButton1
@@ -449,47 +559,10 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AutoGenerateColumns = false;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.кодЛьготыDataGridViewTextBoxColumn,
-            this.типЛьготыDataGridViewTextBoxColumn,
-            this.скидкаDataGridViewTextBoxColumn});
-            this.dataGridView3.DataSource = this.льготыBindingSource;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 473);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(692, 150);
-            this.dataGridView3.TabIndex = 4;
-            // 
-            // льготыBindingSource
-            // 
-            this.льготыBindingSource.DataMember = "Льготы";
-            this.льготыBindingSource.DataSource = this.database1DataSet5;
-            // 
-            // кодЛьготыDataGridViewTextBoxColumn
-            // 
-            this.кодЛьготыDataGridViewTextBoxColumn.DataPropertyName = "Код льготы";
-            this.кодЛьготыDataGridViewTextBoxColumn.HeaderText = "Код льготы";
-            this.кодЛьготыDataGridViewTextBoxColumn.Name = "кодЛьготыDataGridViewTextBoxColumn";
-            // 
-            // типЛьготыDataGridViewTextBoxColumn
-            // 
-            this.типЛьготыDataGridViewTextBoxColumn.DataPropertyName = "Тип льготы";
-            this.типЛьготыDataGridViewTextBoxColumn.HeaderText = "Тип льготы";
-            this.типЛьготыDataGridViewTextBoxColumn.Name = "типЛьготыDataGridViewTextBoxColumn";
-            // 
-            // скидкаDataGridViewTextBoxColumn
-            // 
-            this.скидкаDataGridViewTextBoxColumn.DataPropertyName = "Скидка";
-            this.скидкаDataGridViewTextBoxColumn.HeaderText = "Скидка";
-            this.скидкаDataGridViewTextBoxColumn.Name = "скидкаDataGridViewTextBoxColumn";
-            // 
             // bindingNavigator3
             // 
             this.bindingNavigator3.AddNewItem = this.toolStripButton7;
-            this.bindingNavigator3.BindingSource = this.льготыBindingSource;
+            this.bindingNavigator3.BindingSource = this.studentsBindingSource1;
             this.bindingNavigator3.CountItem = this.toolStripLabel2;
             this.bindingNavigator3.DeleteItem = this.toolStripButton8;
             this.bindingNavigator3.Dock = System.Windows.Forms.DockStyle.None;
@@ -513,7 +586,7 @@
             this.bindingNavigator3.Name = "bindingNavigator3";
             this.bindingNavigator3.PositionItem = this.toolStripTextBox2;
             this.bindingNavigator3.Size = new System.Drawing.Size(263, 25);
-            this.bindingNavigator3.TabIndex = 5;
+            this.bindingNavigator3.TabIndex = 9;
             this.bindingNavigator3.Text = "bindingNavigator3";
             // 
             // toolStripButton7
@@ -601,58 +674,16 @@
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(733, 24);
-            this.menuStrip1.TabIndex = 6;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // database1DataSet5
-            // 
-            this.database1DataSet5.DataSetName = "Database1DataSet5";
-            this.database1DataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // комнатыTableAdapter1
-            // 
-            this.комнатыTableAdapter1.ClearBeforeFill = true;
-            // 
-            // льготыTableAdapter1
-            // 
-            this.льготыTableAdapter1.ClearBeforeFill = true;
-            // 
-            // студентыTableAdapter1
-            // 
-            this.студентыTableAdapter1.ClearBeforeFill = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 672);
             this.Controls.Add(this.bindingNavigator3);
-            this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.bindingNavigator2);
-            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.bindingNavigator1);
+            this.Controls.Add(this.dataGridView3);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.dataGridView1);
             this.MainMenuStrip = this.menuStrip1;
@@ -661,23 +692,24 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.комнатыBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hostelDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.benefitsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.студентыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
             this.bindingNavigator2.ResumeLayout(false);
             this.bindingNavigator2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.льготыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).EndInit();
             this.bindingNavigator3.ResumeLayout(false);
             this.bindingNavigator3.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -686,6 +718,36 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private HostelDataSet hostelDataSet;
+        private System.Windows.Forms.BindingSource roomsBindingSource;
+        private HostelDataSetTableAdapters.RoomsTableAdapter roomsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn floorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn toolsDataGridViewTextBoxColumn;
+        private HostelDataSetTableAdapters.StudentsTableAdapter studentsTableAdapter;
+        private HostelDataSetTableAdapters.BenefitsTableAdapter benefitsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn discountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource benefitsBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passportDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn benefitCodeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colonizeDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource studentsBindingSource1;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -698,20 +760,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.BindingSource комнатыBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn номерКомнатыDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn соимостьDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn количествоDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn инвентарьDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn этажDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource студентыBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодСтудентаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn фИОDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn годРожденияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn полDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn адресDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn группаDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingNavigator bindingNavigator2;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
@@ -724,11 +772,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.BindingSource льготыBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кодЛьготыDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn типЛьготыDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn скидкаDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingNavigator bindingNavigator3;
         private System.Windows.Forms.ToolStripButton toolStripButton7;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
@@ -741,13 +784,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton11;
         private System.Windows.Forms.ToolStripButton toolStripButton12;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private Database1DataSet5 database1DataSet5;
-        private Database1DataSet5TableAdapters.КомнатыTableAdapter комнатыTableAdapter1;
-        private Database1DataSet5TableAdapters.ЛьготыTableAdapter льготыTableAdapter1;
-        private Database1DataSet5TableAdapters.СтудентыTableAdapter студентыTableAdapter1;
     }
 }
 
