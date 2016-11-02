@@ -31,6 +31,7 @@ namespace WindowsFormsApplication1
            // this.льготыTableAdapter1.Fill(this.database1DataSet5.Льготы);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "database1DataSet5.Комнаты". При необходимости она может быть перемещена или удалена.
             //this.комнатыTableAdapter1.Fill(this.database1DataSet5.Комнаты);
+            dataGridView1.AutoGenerateColumns = true;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -52,5 +53,36 @@ namespace WindowsFormsApplication1
             benefitsTableAdapter.Update(hostelDataSet);
             studentsTableAdapter.Update(hostelDataSet);
         }
+
+        private void roomsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            bindingNavigator1.BindingSource = roomsBindingSource;
+            dataGridView1.DataSource = roomsBindingSource;
+            label1.Text = "Rooms";
+        }
+
+        private void benefitsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingNavigator1.BindingSource = benefitsBindingSource1;
+            dataGridView1.DataSource = benefitsBindingSource1;
+            label1.Text = "Benefits";
+        }
+
+        private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingNavigator1.BindingSource = studentsBindingSource1;
+            dataGridView1.DataSource = studentsBindingSource1;
+            label1.Text = "Students";
+        }
+
+        private void resettlementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var rs = new RSForm();
+            rs.ShowDialog();
+            benefitsTableAdapter.Fill(hostelDataSet.Benefits);
+            studentsTableAdapter.Fill(hostelDataSet.Students);
+            roomsTableAdapter.Fill(hostelDataSet.Rooms);
+        }
+      
     }
 }
